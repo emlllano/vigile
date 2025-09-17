@@ -1,0 +1,92 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "JetBrainsMonoNerdFont";
+    border: none;
+    min-height: 0;
+    margin: 1px 1px;
+}
+
+#waybar {
+    background-color: rgba(32, 32, 32, 0.0);
+    color: #ebebeb;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: .5s;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Module */
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray,
+#mpd,
+#disk,
+#battery,
+#backlight,
+#workspaces {
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    color: #ebebeb;
+    margin: 1px 1px;
+/*    background: #1c1c1c;*/
+	border-radius: 8px;
+	border: 0px solid #ffffff;
+}
+
+#memory {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#workspaces button {
+    font-weight: bold; /* Somewhy the bar-wide setting is ignored*/
+    padding: 0;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin: 2px 2px;
+}
+#workspaces button.active {
+    border-radius: 5px;
+    color: #ffffff;
+    margin: 2px 2px;
+}
+
+#battery.charging, #battery.plugged {
+    color: #ffffff;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+
+#custom-scratchpad_indicator {
+	padding-left: 0.1em;
+	padding-right: 0.2em;
+	background-color: #000000;
+	border-radius: 5px;
+	border: 0.3px solid #ffffff;
+}
+#custom-cycle_wall {
+	padding-left: 0.4em;
+	padding-right: 0.2em;
+	background-color: #000000;
+	border-radius: 5px;
+	border: 0.3px solid #ffffff;
+}
+#custom-updates {
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	background-color: #000000;
+	border-radius: 5px;
+	border: 0.3px solid #ffffff;
+}
+

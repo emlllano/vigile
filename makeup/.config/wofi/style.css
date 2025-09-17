@@ -1,0 +1,56 @@
+window {
+    font-size: 15px;
+    font-family: "SourceCodePro";
+    background-color: rgba(0, 0, 0, 0.0);
+    border-radius: 5px;
+    animation-duration: 100ms;
+}
+
+#entry {
+    margin: 5px 5px;
+    padding-left: 30px;
+    border-radius: 5px;
+}
+
+#entry:selected {
+    background-color: #ebebeb;
+    color: #1a1a1a;
+    border-radius: 5px;
+}
+
+#expander-box {
+    background: transparent;
+    color: #1a1a1a;
+    border-radius: 5px;
+}
+
+#text:selected {
+    color: #1a1a1a;
+}
+
+#input {
+    background-color: rgba(26, 26, 26, 0.8);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
+    box-shadow: none;
+    border: none;
+    border-radius: 5px;
+}
+
+#input:focus {
+    border-radius: 5px;
+    color: #ebebeb;
+}
+
+#img {
+    padding-right: 10px;
+}
+
+#outer-box {
+    box-shadow: none;
+    border-radius: 5px;
+    padding-bottom: 15px;
+
+}

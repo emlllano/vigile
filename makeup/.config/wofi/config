@@ -1,0 +1,12 @@
+width=30%
+lines=3
+
+hide_scroll = true
+allow_images = false
+image_size = 20
+prompt=Search...
+normal_window = true
+
+matching=fuzzy
+insensitive=true
+columns=1

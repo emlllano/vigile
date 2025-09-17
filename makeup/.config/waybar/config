@@ -1,0 +1,120 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 0, // Waybar height (to be removed for auto height)
+    "width": 0, // Waybar width (0 == auto)
+    "spacing": 10, // Gaps between modules
+    "margin": 10,
+    "margin-bottom": 15,
+    "margin-top": 0,
+    "gtk-layer-shell": true,
+    "modules-left": [
+      "hyprland/workspaces"
+      
+    ],
+    "modules-right": [
+        
+        "tray",
+        "pulseaudio",
+        "bluetooth",
+        "network",
+        "clock",
+        "custom/button"     
+    ],
+   
+    "hyprland/workspaces": {
+	"format": "{name}",
+       "persistent-workspaces": {
+             "*": 10, 
+       }
+
+	},
+
+
+    "network": {       
+        "format-wifi": "{essid} ({signalStrength}%) <span color=\"#FFFFFF\"></span> ",
+        "format-ethernet": "<span color=\"#FFFFFF\">󰛳</span>",
+        "tooltip-format": "{ifname} via {gwaddr} <span color=\"#FFFFFF\"></span>",
+        "format-linked": "{ifname} (No IP) <span color=\"#FFFFFF\"></span>",
+        "format-disconnected": "Disconnected",
+        //"format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "on-click": "nm-connection-editor",
+        "on-click-right": "nm-connection-editor"
+    },
+
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+
+    "clock": {
+        "timezone": "Europe/Paris",
+	      "interval": 1,
+        "format": "{:%h %d %H:%M} <span color=\"#FFFFFF\"></span>",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
+        "on-click": "gnome-calendar"
+    },
+
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "<span color=\"#FFFFFF\">{icon}</span>",
+        "format-bluetooth": "{volume}% <span color=\"#FFFFFF\">{icon} </span>",
+        "format-bluetooth-muted": "MUTED  ",
+        "format-muted": "MUTED",
+        "format-source": "{volume}% <span color=\"#FFFFFF\"></span>",
+        "format-source-muted": "",
+        "format-icons": {
+            "default": ["", "", "", "", ""]
+        },
+        "on-double-click": "pavucontrol",
+        "on-click": "pulsemixer --unmute",
+        "on-click-right": "pulsemixer --mute"
+    },
+
+    "hyprland/window": {
+		"format": "   {}",
+		"max-length": 120,
+		"separate-outputs": true
+    },
+
+    "memory": {
+        "format": "ram: {}%"
+    },
+
+    "cpu": {
+        "format": "cpu: {usage}%",
+        "tooltip": false
+    },
+
+     "temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        "format-critical": "{temperatureC}°C critical",
+        "format": "{temperatureC}°C ",
+        "format-icons": ["", "", ""]
+    },
+
+    "disk": {
+    "interval": 3,
+    "format": "{used}/{total}",
+    "path": "/"
+    },
+
+"custom/weather": {
+		"format": "<span color=\"#ebebeb\"> {} </span>",
+		"exec"  : "curl -s wttr.in/Toulouse?format=%C%t+%P%w",
+		"interval" : 200,
+	  "tooltip": false	
+	},
+
+  "bluetooth": {
+    "format": "<span color=\"#FFFFFF\"></span>",
+    "on-click": "overskride"
+    },
+"custom/button": {
+    "format": "<span color=\"#ebebeb\"></span>  ",
+    "on-click": "swaync-client -t -sw",
+    "tooltip": false
+    } 
+}

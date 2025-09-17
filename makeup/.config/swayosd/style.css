@@ -1,0 +1,27 @@
+
+window {
+  border-radius: 10;
+  opacity: 0.0;
+  border: 2px solid #ebebeb;
+
+  background-color: #111111;
+}
+
+label {
+  font-family: 'JetBrainsMonoNerdFont'; /*change this to firacode*/
+  font-size: 12pt;
+
+  color: #ebebeb;
+}
+
+image {
+  color: #ebebeb;
+}
+
+progressbar {
+  border-radius: 0;
+}
+
+progress {
+  background-color: #ebebeb;
+}
