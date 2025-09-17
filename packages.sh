@@ -12,6 +12,5 @@ curl -fsS https://dl.brave.com/install.sh | sh && \
 yay -S --noconfirm pavucontrol-qt fish ranger && \
 yay -S --noconfirm uwsm swayosd overskride &&\
 sudo pacman -S --noconfirm lib32-zlib &&\
-yay -S --noconfirm nvidia-dkms qt6-wayland nvidia-utils qt5-wayland libva-nvidia-driver lib32-nvidia-utils &&\
-vim +PluginInstall +qall
+yay -S --noconfirm nvidia-dkms qt6-wayland nvidia-utils qt5-wayland libva-nvidia-driver lib32-nvidia-utils 
 
