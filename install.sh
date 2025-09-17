@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eE
 echo Hello there, installing vigileos ..
-source packages.sh
+source ~/vigile/packages.sh
 echo packages were installed.
 sleep 3
 sudo cp ~/vigile/osCustom/os-release /etc/
