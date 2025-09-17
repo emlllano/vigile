@@ -1,5 +1,7 @@
 #!/bin/sh
 set -eE
+MAIN_PATH="~/vigile"
+export PATH="MAIN_PATH"
 echo Hello there, installing vigileos ..
 source packages.sh
 echo packages were installed.
