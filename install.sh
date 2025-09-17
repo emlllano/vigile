@@ -7,7 +7,7 @@ sleep 3
 sudo cp ~/vigile/osCustom/os-release /etc/
 sudo mkdir /usr/share/wallpapers/ && mkdir /usr/share/userlogo/
 sudo mv ~/vigile/osCustom/wallpapers/Lines.png /usr/share/wallpapers/
-sudo mv ~/vigile/osCustom/logo/logo.txt /usr/share/userlogo
+sudo mv ~/vigile/osCustom/logo/logo.txt /usr/share/userlogo/
 sudo mv ~/vigile/osCustom/logo/matrix.jpg /usr/share/userlogo/
 sudo systemctl enable bluetooth.service
 sudo systemctl enable iwd.service
