@@ -1,7 +1,5 @@
 #!/bin/sh
 set -eE
-MAIN_PATH="~/vigile"
-export PATH="MAIN_PATH"
 echo Hello there, installing vigileos ..
 source packages.sh
 echo packages were installed.
@@ -17,9 +15,9 @@ sudo systemctl disable systemd-networkd-wait-online.service
 sudo systemctl mask systemd-networkd-wait-online.service
 mv makeup/* ~/
 chsh -S /bin/fish
-source nvidia.sh
+source ~/vigile/nvidia.sh
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 echo installation finished!!
 sleep 1
-source reboot.sh
+source ~/vigile/reboot.sh
 
