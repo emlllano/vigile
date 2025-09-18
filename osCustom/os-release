@@ -1,4 +1,4 @@
-NAME="VigileOS"
+qqqqqqqqqqqqqqqqqqqqqqqqqqqNAME="VigileOS"
 PRETTY_NAME="VigileOS"
 ID="vigile"
 BUILD_ID=rolling
@@ -7,4 +7,4 @@ HOME_URL="https://archlinux.org/"
 DOCUMENTATION_URL="https://wiki.archlinux.org"
 SUPPORT_URL="https://"
 PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy"
-LOGO=vigileos-logo
+LOGO=/usr/share/userlogo/logo.txt
