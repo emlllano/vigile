@@ -63,12 +63,6 @@
       "format": "\u001b[90m┌──────────────────────Software──────────────────────┐"
     },
     {
-      "type": "command",
-      "key": "\ue900 OS",
-      "keyColor": "blue",
-      "text": "version=$(omarchy-version); echo \"Omarchy $version\""
-    },
-    {
       "type": "kernel",
       "key": "│ ├",
       "keyColor": "blue"
