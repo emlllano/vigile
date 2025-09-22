@@ -1,8 +1,7 @@
-qqqqqqqqqqqqqqqqqqqqqqqqqqqNAME="VigileOS"
+NAME="VigileOS"
 PRETTY_NAME="VigileOS"
 ID="vigile"
 BUILD_ID=rolling
-ANSI_COLOR"255;255;255;255;255"
 HOME_URL="https://archlinux.org/"
 DOCUMENTATION_URL="https://wiki.archlinux.org"
 SUPPORT_URL="https://"
